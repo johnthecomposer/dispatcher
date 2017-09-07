@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+     <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta charset="UTF-8">
+          <title>dispatcher</title>
+          <link rel="stylesheet" type="text/css" href="style/dispatcher.css">
+     </head>
+     <body>
+          <div id="header">
+               <button id="dispatch">dispatch</button>
+               <span id="mode-message"></span>
+               <span id="last-updated"></span>
+          </div>
+          <div id="api-data" class="flexcontainer">
+               <div id="packages" class="flexitem">
+                    <h2>packages</h2><span class="count"></span>
+                    <pre class="data"></pre>
+               </div>
+               <div id="drones" class="flexitem">
+                    <h2>drones</h2><span class="count"></span>
+                    <pre class="data"></pre>
+               </div>
+          </div>
+          <div id="dispatcher" class="flexcontainer">
+               <div id="unassigned" class="flexitem">
+                    <h2>unassigned</h2><span class="count"></span>
+                    <pre class="data"></pre>
+               </div>
+               <div id="assigned" class="flexitem">
+                    <h2>assigned</h2><span class="count"></span>
+                    <pre class="data"></pre>
+               </div>
+          </div>
+     </body>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js"/></script>
+     <script src="test/data.js"/></script>
+     <script src="script/dispatcher.js"/></script>
+</html>

@@ -1,0 +1,83 @@
+/*
+GetSwift Code Test - solution by John Celentano - john.celentano@gmail.com
+https://github.com/GetSwift/codetest
+*/
+*{
+     font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+     font-size: 16px;
+     border-radius: 7px;
+}
+body{
+     padding: 0 10px;
+     margin: 0;
+     background-color: #9bc2cf;
+     transition: 1s;
+}
+button{
+     margin: 0;
+     padding: 7px;
+     border: 0;
+     background-color: white;
+     color: blue;
+     font-weight: bold;
+}
+h2{
+     display: inline-block;
+     margin: 0 5px 0 0;
+}
+pre{
+     height: 200px;
+     border: 1px solid grey;
+     padding: 7px;
+     background-color: lightgrey;
+     overflow-y: scroll;
+}
+.flexcontainer{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.flexitem{
+     flex: 1 1 auto;
+     height: 250px;
+     margin: 7px 7px 7px 0;
+     padding: 12px;
+     border: 1px solid white;
+     overflow-y: hidden;
+}
+#header{
+     position: fixed;
+     top: 0;
+     width: 100%;
+     z-index: 999;
+     /*border-bottom: 1px solid white;*/
+     background-color: lightblue;
+}
+#mode-message{
+}
+#last-updated{
+     position: absolute;
+     top: 10px;
+     right: 30px;
+}
+#api-data{
+     margin-top: 40px;
+}
+
+/* state */
+button:hover,button.disabled{
+     background-color: lightgrey;
+     color: white;
+}
+.loading{
+     background-color: #8aacb8;
+     transition: 2s;
+}
+
+/* responsive styles */
+@media only screen and (max-width: 1023px){
+    /* tablet and mobile */
+     .flexcontainer{
+          display: block;
+     }
+}
